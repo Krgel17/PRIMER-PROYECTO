@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeropuerto Amalfi</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/estilo-layout.css">
+    <link rel="stylesheet" href="css/style_admin.css">
+    <link rel="shortcut icon" href="img/travel-g000d4f80d_640.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/tabs.js"></script>
+
+</head>
+<body>
+    <form action="" method="GET" name="paginaPrincipal">
+        <header>
+            <article>
+                <div class="encabezado">
+                    <div class="logo">
+                        <img src="img/logo.jpg" alt="">
+                    </div>
+                    <div class="botones">
+                        <nav class="navegacion"> 
+                            <a href={{url_for("static", filename="login.html") }}>*Ingresar </a>
+                            <a href={{url_for("static", filename="registro.html") }}> *Registrarse</a> 
+                        </nav>
+                    </div>
+                </div>
+            </article>
+        </header>
+        <section class="encabezado_ventanas">
+            <h1>Administrador </h1>
+            <div class="barra">
+                <div class="logo1">
+                    <em class="fas fa-user-circle"></em>
+                </div>
+                <div class="salir">
+                    <a class="salir" href={{url_for("static", filename="index.html") }}>Salir </a>
+                </div>
+            </div>
+            <div class="vent">
+                <ul class="tabs">
+                    <li class="usuario"><a href="#tab1"><span class="fas fa-users"></span><span class="tab-text"> Usuario</span></a></li>
+                    <li class="usuario"><a href="#tab2"><span class="fas fa-user-shield"></span><span class="tab-text">Pilotos</span></a></li>
+                    <li class="usuario"><a href="#tab3"><span class="fas fa-plane-departure"></span><span class="tab-text">Vuelos</span></a></li>
+                </ul>
+            </div>
+            <div class="pantallas">
+                <article class="usuario1" id="tab1">
+                    <div>
+                        <input class="crear1" type="submit" value="Crear Nuevo Usuario ">
+                    </div>
+                    <div>
+                        <input class="cuadro" type="search" placeholder="Consultar usuario"><br>
+                    </div>
+                    <div>
+                        <input class="boton" type="submit" value="Buscar"><br>
+                    </div>
+                    <div class="tabla">
+                        <p>
+                            Código
+                        </p>
+                        <p>
+                            Identificación
+                        </p>
+                        <p>
+                            Nombre
+                        </p>
+                        <p>
+                            E-mail
+                        </p>
+                        <p>
+                            Edad
+                        </p>
+                        <p>
+                            Teléfono
+                        </p>
+                        <p>
+                            Reservas
+                        </p>
+                        <p>
+                            Comentarios
+                        </p>
+                    </div>                
+                </article>
+                <article class="usuario1" id="tab2">
+                    <div>
+                        <input class="crear2" type="submit" value="Crear Nuevo Piloto ">
+                    </div>
+                    <div>
+                        <input class="cuadro" type="search" placeholder="Consultar piloto" ><br>
+                    </div>
+                    <div>
+                        <input class="boton" type="submit" value="Buscar"><br>
+                    </div>
+                    <div class="tabla">
+                        <p>
+                            Código
+                        </p>
+                        <p>
+                            Identificación
+                        </p>
+                        <p>
+                            Nombre
+                        </p>
+                        <p>
+                            E-mail
+                        </p>
+                        <p>
+                            Edad
+                        </p>
+                        <p>
+                            Teléfono
+                        </p>
+                        <p>
+                            Vuelos asignados
+                        </p>
+                    </div>
+                </article>
+                <article class="usuario1" id="tab3">
+                    <div>
+                        <input class="crear3" type="submit" value="Crear Nuevo Vuelo ">
+                    </div>
+                    <div>
+                        <input class="cuadro" type="search" placeholder="Consultar vuelo">
+                    </div>
+                    <div>
+                        <input class="boton" type="submit" value="Buscar">
+                    </div>
+                    <div class="tabla">
+                        <p>
+                            Código de Vuelo
+                        </p>
+                        <p>
+                            Avión
+                        </p>
+                        <p>
+                            Piloto
+                        </p>
+                        <p>
+                            Origen
+                        </p>
+                        <p>
+                            Destino
+                        </p>
+                        <p>
+                            Fecha
+                        </p>
+                    </div>
+                    
+                </article>
+            </div>
+        </section>
+        <footer>
+            <div class="pie">
+                <div class="iconos">
+                        <div class="telefono">
+                            <span class="icon-phone">36256</span>
+                        </div>
+                        
+                        <div class="direccion">
+                            <span class="icon-location2">cra 45 h 65</span>
+                        </div>
+                        
+                        <div class="copyright">
+                            <span class="icon-cop">Todos los derechos reservados</span>
+                        </div>
+                        
+                </div>
+                <div class="redes">
+                    <div class="facebook">
+                        <span class="icon-facebook"></span>
+                    </div>
+                    <div class="youtube">
+                        <span class="icon-youtube"></span>
+                    </div>
+                    <div class="correo">
+                        <span class="icon-mail4"></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </form>
+
+</body>
+</html>

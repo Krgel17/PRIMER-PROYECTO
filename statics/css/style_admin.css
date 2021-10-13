@@ -1,0 +1,125 @@
+
+
+h1 {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.barra{
+    overflow: hidden;
+    margin-top: 20px;
+}
+.logo1{
+    float: left;
+    color: rgb(27, 31, 49);
+    margin-left: 90%;
+}
+
+
+.salir{
+    float:right;
+    padding: auto;
+    margin-right: 5%;
+    color: rgb(27, 31, 49);
+
+}
+
+.vent{
+    display: block;
+}
+
+.vent .tabs{
+    display: flex;
+    width: auto;
+    margin: 20px;
+    margin-top: 10px;
+    list-style: none;
+    background: rgb(209, 237, 241);
+    border-radius: 8px;
+}
+.vent .tabs .usuario{
+    width: auto;
+    max-width: 90%;
+    margin-right: 20px;
+    display: block;
+    padding: 5px 5px;
+    background-color: rgb(204, 252, 252);
+    border-radius: 2px;
+}
+
+.pantallas{
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    width: auto;
+    background: rgb(255, 255, 255);
+    border-radius: 0px 0px 8px 8px;
+    
+}
+
+.usuario1{
+    background: rgba(216, 255, 252, 0.62);
+}
+
+.usuario1 p{
+    display: flex;
+    float:right;
+    padding: auto;
+    margin-right: 5%;
+    size: auto;
+}
+
+.cuadro{
+    padding: auto;
+    border-radius: 5px;
+}
+
+.boton{
+    border-radius: 2px;
+}
+
+.crear1, .crear2, .crear3{
+    margin-right: 40px;
+    margin: 18px 10px 50px 10px;
+    border-radius: 2px;
+}
+
+.icono{
+    color: rgb(15, 14, 21);
+    margin: 0px;
+    padding: 0px 0px 0px 90%;
+    display: flex;
+}
+
+.vent .tabs .usuario .tab-text{
+    margin-left: 4px;
+}
+
+.active{
+    background: rgb(12, 245, 245);
+}
+
+section article{
+    padding: 10px;
+    margin-left: 12px;
+}
+
+@media screen and (max-width: 500px){
+    .vent .tabs .usuario{
+        width: none;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .vent .tabs .usuario a{
+        padding: 15px 0px;
+    }
+    .vent .tabs .usuario .tab-text{
+        display: none;
+    }
+}
